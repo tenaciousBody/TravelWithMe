@@ -1,24 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
+import Subscribe from './Component/subscribe';
+import Bind from './Component/bind';
+import Parent from './Component/parent';
+import PersonList from './Component/PersonList';
+import StyleSheet from './Component/StyleSheet';
+import './Component/Styles/styleSheet.css'
+import Refs from './Component/refs';
+import ParentRef from './Component/ParentRef';
+import Form from './Component/Form';
+import Portal from './Component/portal';
+import Hero from './Component/hero';
+import ErrorBoundary from './Component/ErrorBoundary';
+import HoverCounter from './Component/hoverCounter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Please click on travelWithMe.com for more information.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+//<Counter name="Test" type ="application"/>
+//<Subscribe></Subscribe>
+//<Bind></Bind>
+/* <div>
+<Parent></Parent>
+<PersonList></PersonList>
+</div> */
+//Passing props from Parent components for applying css
+/* <div>
+<StyleSheet isPrimary={false} ></StyleSheet>
+<StyleSheet isPrimary={true} ></StyleSheet>
+</div> */
+//<Refs/>
+
+//<ParentRef/>
+//<Form></Form>
+<div> 
+{/* <Hero heroname="Hulk"></Hero>
+<Hero heroname="IronMan"></Hero>
+<ErrorBoundary>
+<Hero heroname="Thor"></Hero>
+</ErrorBoundary> */
+<HoverCounter></HoverCounter>
+}
+
+
+</div>
+
   );
 }
 
