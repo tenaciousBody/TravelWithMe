@@ -15,6 +15,8 @@ import ErrorBoundary from './Component/ErrorBoundary';
 import HoverCounter from './Component/hoverCounter';
 import PropsRender from './Component/PropsRender';
 import HoverCounter2 from './Component/hoverCounter2';
+import ComponentA from './Component/ComponentA';
+import { UserProvider } from './Component/context';
 
 function App() {
   return (
@@ -41,8 +43,13 @@ function App() {
 <Hero heroname="Thor"></Hero>
 </ErrorBoundary> */
 //<HoverCounter></HoverCounter>
-<PropsRender render = {(incount, counter) => 
-    (<HoverCounter2 incount={incount} counter={counter}></HoverCounter2>)}></PropsRender>
+//<PropsRender render = {(incount, counter) => 
+//</div>    (<HoverCounter2 incount={incount} counter={counter}></HoverCounter2>)}>
+//</PropsRender>
+<UserProvider value ="I_am_Ashutosh">
+    <ComponentA/>
+</UserProvider>
+
 }
 
 
