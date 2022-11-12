@@ -17,6 +17,7 @@ import PropsRender from './Component/PropsRender';
 import HoverCounter2 from './Component/hoverCounter2';
 import ComponentA from './Component/ComponentA';
 import { UserProvider } from './Component/context';
+import {GetRequest} from './Component/GetRequest'
 
 function App() {
   return (
@@ -46,10 +47,10 @@ function App() {
 //<PropsRender render = {(incount, counter) => 
 //</div>    (<HoverCounter2 incount={incount} counter={counter}></HoverCounter2>)}>
 //</PropsRender>
-<UserProvider value ="I_am_Ashutosh">
-    <ComponentA/>
-</UserProvider>
-
+//<UserProvider value ="I_am_Ashutosh">
+//    <ComponentA/>
+//</UserProvider>
+<GetRequest></GetRequest>
 }
 
 
