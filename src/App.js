@@ -18,6 +18,7 @@ import HoverCounter2 from './Component/hoverCounter2';
 import ComponentA from './Component/ComponentA';
 import { UserProvider } from './Component/context';
 import {GetRequest} from './Component/GetRequest'
+import FormPostRequest from './Component/FormPostRequest';
 
 function App() {
   return (
@@ -50,7 +51,8 @@ function App() {
 //<UserProvider value ="I_am_Ashutosh">
 //    <ComponentA/>
 //</UserProvider>
-<GetRequest></GetRequest>
+//<GetRequest></GetRequest>
+<FormPostRequest></FormPostRequest>
 }
 
 
