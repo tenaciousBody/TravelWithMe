@@ -19,6 +19,7 @@ import ComponentA from './Component/ComponentA';
 import { UserProvider } from './Component/context';
 import {GetRequest} from './Component/GetRequest'
 import FormPostRequest from './Component/FormPostRequest';
+import HooksCounter from './Component/HooksCounter';
 
 function App() {
   return (
@@ -52,7 +53,8 @@ function App() {
 //    <ComponentA/>
 //</UserProvider>
 //<GetRequest></GetRequest>
-<FormPostRequest></FormPostRequest>
+//<FormPostRequest></FormPostRequest>
+<HooksCounter></HooksCounter>
 }
 
 
