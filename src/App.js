@@ -22,6 +22,7 @@ import FormPostRequest from './Component/FormPostRequest';
 import HooksCounter from './Component/HooksCounter';
 import HooksWithObject from './Component/HooksWithObject';
 import ArrayHooks from './Component/ArrayHooks';
+import UseStateInClassComp from './Component/UseStateInClassComp';
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
 //<FormPostRequest></FormPostRequest>
 //<HooksCounter></HooksCounter>
 //<HooksWithObject></HooksWithObject>
-<ArrayHooks></ArrayHooks>
+//<ArrayHooks></ArrayHooks>
+<UseStateInClassComp/>
 }
 
 
