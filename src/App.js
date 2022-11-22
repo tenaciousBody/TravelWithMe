@@ -24,6 +24,8 @@ import HooksWithObject from './Component/HooksWithObject';
 import ArrayHooks from './Component/ArrayHooks';
 import UseStateInClassComp from './Component/UseStateInClassComp';
 import UseEffectComp from './Component/UseEffectComp';
+import MouseHooks from './Component/MouseHooks';
+import MouseContainer from './Component/MouseContainer';
 
 function App() {
   return (
@@ -62,7 +64,9 @@ function App() {
 //<HooksWithObject></HooksWithObject>
 //<ArrayHooks></ArrayHooks>
 //<UseStateInClassComp/>
-<UseEffectComp/>
+//<UseEffectComp/>
+//<MouseHooks/>
+<MouseContainer/>
 }
 
 
