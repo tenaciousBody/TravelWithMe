@@ -23,6 +23,7 @@ import HooksCounter from './Component/HooksCounter';
 import HooksWithObject from './Component/HooksWithObject';
 import ArrayHooks from './Component/ArrayHooks';
 import UseStateInClassComp from './Component/UseStateInClassComp';
+import UseEffectComp from './Component/UseEffectComp';
 
 function App() {
   return (
@@ -60,7 +61,8 @@ function App() {
 //<HooksCounter></HooksCounter>
 //<HooksWithObject></HooksWithObject>
 //<ArrayHooks></ArrayHooks>
-<UseStateInClassComp/>
+//<UseStateInClassComp/>
+<UseEffectComp/>
 }
 
 
