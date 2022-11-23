@@ -26,6 +26,7 @@ import UseStateInClassComp from './Component/UseStateInClassComp';
 import UseEffectComp from './Component/UseEffectComp';
 import MouseHooks from './Component/MouseHooks';
 import MouseContainer from './Component/MouseContainer';
+import IntervalCounter from './Component/IntervalCounter';
 
 function App() {
   return (
@@ -66,7 +67,8 @@ function App() {
 //<UseStateInClassComp/>
 //<UseEffectComp/>
 //<MouseHooks/>
-<MouseContainer/>
+//<MouseContainer/>
+<IntervalCounter/>
 }
 
 
