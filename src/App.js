@@ -28,6 +28,7 @@ import MouseHooks from './Component/MouseHooks';
 import MouseContainer from './Component/MouseContainer';
 import IntervalCounter from './Component/IntervalCounter';
 import ApiCallByHooks from './Component/ApiCallByHooks';
+import FComponentA from './Component/FComponentA';
 
 function App() {
   return (
@@ -70,7 +71,8 @@ function App() {
 //<MouseHooks/>
 //<MouseContainer/>
 //<IntervalCounter/>
-<ApiCallByHooks/>
+//<ApiCallByHooks/>
+<FComponentA/>
 }
 
 
