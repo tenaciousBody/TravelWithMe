@@ -27,6 +27,7 @@ import UseEffectComp from './Component/UseEffectComp';
 import MouseHooks from './Component/MouseHooks';
 import MouseContainer from './Component/MouseContainer';
 import IntervalCounter from './Component/IntervalCounter';
+import ApiCallByHooks from './Component/ApiCallByHooks';
 
 function App() {
   return (
@@ -68,7 +69,8 @@ function App() {
 //<UseEffectComp/>
 //<MouseHooks/>
 //<MouseContainer/>
-<IntervalCounter/>
+//<IntervalCounter/>
+<ApiCallByHooks/>
 }
 
 
