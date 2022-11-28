@@ -29,6 +29,7 @@ import MouseContainer from './Component/MouseContainer';
 import IntervalCounter from './Component/IntervalCounter';
 import ApiCallByHooks from './Component/ApiCallByHooks';
 import FComponentA from './Component/FComponentA';
+import ReducerCounter from './Component/ReducerCounter';
 
 function App() {
   return (
@@ -72,9 +73,9 @@ function App() {
 //<MouseContainer/>
 //<IntervalCounter/>
 //<ApiCallByHooks/>
-<FComponentA/>
+//<FComponentA/>
+<ReducerCounter/>
 }
-
 
 </div>
 
