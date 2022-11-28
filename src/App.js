@@ -30,8 +30,30 @@ import IntervalCounter from './Component/IntervalCounter';
 import ApiCallByHooks from './Component/ApiCallByHooks';
 import FComponentA from './Component/FComponentA';
 import ReducerCounter from './Component/ReducerCounter';
+import ReducerGlobalCounter from './Component/ReducerGlobalCounter';
+import React,{ useReducer } from 'react';
+
+export const context = React.createContext()
+
+const intitialState = {
+  firstCounter: 0
+}
+
+const reducer= (state, action) => {
+  switch(action.type) {
+      case 'increment':
+          return  {firstCounter : state.firstCounter + action.value} 
+      case 'decrement':
+          return {firstCounter : state.firstCounter - action.value}   
+      case 'reset':
+          return intitialState    
+       default:
+          return state   
+  }
+}
 
 function App() {
+  const [countState, dispatch] = useReducer(reducer, intitialState)
   return (
 //<Counter name="Test" type ="application"/>
 //<Subscribe></Subscribe>
@@ -49,12 +71,11 @@ function App() {
 
 //<ParentRef/>
 //<Form></Form>
-<div> 
-{/* <Hero heroname="Hulk"></Hero>
-<Hero heroname="IronMan"></Hero>
-<ErrorBoundary>
-<Hero heroname="Thor"></Hero>
-</ErrorBoundary> */
+//<Hero heroname="Hulk"></Hero>
+//<Hero heroname="IronMan"></Hero>
+//<ErrorBoundary>
+//<Hero heroname="Thor"></Hero>
+//</ErrorBoundary> 
 //<HoverCounter></HoverCounter>
 //<PropsRender render = {(incount, counter) => 
 //</div>    (<HoverCounter2 incount={incount} counter={counter}></HoverCounter2>)}>
@@ -74,8 +95,12 @@ function App() {
 //<IntervalCounter/>
 //<ApiCallByHooks/>
 //<FComponentA/>
-<ReducerCounter/>
-}
+//<ReducerCounter/>
+<div> 
+ <context.Provider value={{state:countState, dispatch:dispatch} }>
+    <h3>Count value - {countState.firstCounter} </h3> 
+    <ReducerGlobalCounter/>
+</context.Provider>
 
 </div>
 
