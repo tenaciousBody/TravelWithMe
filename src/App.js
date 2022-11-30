@@ -33,6 +33,7 @@ import ReducerCounter from './Component/ReducerCounter';
 import ReducerGlobalCounter from './Component/ReducerGlobalCounter';
 import React,{ useReducer } from 'react';
 import DataFetching from './Component/DataFetching';
+import CallbackParentComp from './Component/CallbackParentComp';
 
 export const context = React.createContext()
 
@@ -101,8 +102,10 @@ function App() {
  {/* <context.Provider value={{state:countState, dispatch:dispatch} }>
     <h3>Count value - {countState.firstCounter} </h3> 
     <ReducerGlobalCounter/>
-</context.Provider> */}
+</context.Provider> 
 <DataFetching/>
+*/}
+<CallbackParentComp/>
 </div>
 
   );
