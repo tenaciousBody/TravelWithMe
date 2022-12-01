@@ -34,6 +34,7 @@ import ReducerGlobalCounter from './Component/ReducerGlobalCounter';
 import React,{ useReducer } from 'react';
 import DataFetching from './Component/DataFetching';
 import CallbackParentComp from './Component/CallbackParentComp';
+import MemoCounters from './Component/MemoCounters';
 
 export const context = React.createContext()
 
@@ -104,8 +105,9 @@ function App() {
     <ReducerGlobalCounter/>
 </context.Provider> 
 <DataFetching/>
-*/}
 <CallbackParentComp/>
+*/}
+<MemoCounters/>
 </div>
 
   );
