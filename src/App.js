@@ -112,8 +112,9 @@ function App() {
 <MemoCounters/>
 <UseRefComponet/>
 <CustomHookCounter/>
-*/}
 <CounterUsingCustomHook/>
+*/}
+<UseRefComponet/>
 </div>
 
   );
