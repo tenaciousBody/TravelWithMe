@@ -35,6 +35,7 @@ import React,{ useReducer } from 'react';
 import DataFetching from './Component/DataFetching';
 import CallbackParentComp from './Component/CallbackParentComp';
 import MemoCounters from './Component/MemoCounters';
+import UseRefComponet from './Component/useRefComponet';
 
 export const context = React.createContext()
 
@@ -106,8 +107,9 @@ function App() {
 </context.Provider> 
 <DataFetching/>
 <CallbackParentComp/>
-*/}
 <MemoCounters/>
+*/}
+<UseRefComponet/>
 </div>
 
   );
