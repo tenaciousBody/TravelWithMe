@@ -36,6 +36,7 @@ import DataFetching from './Component/DataFetching';
 import CallbackParentComp from './Component/CallbackParentComp';
 import MemoCounters from './Component/MemoCounters';
 import UseRefComponet from './Component/useRefComponet';
+import CustomHookCounter from './Component/CustomHookCounter';
 
 export const context = React.createContext()
 
@@ -108,8 +109,9 @@ function App() {
 <DataFetching/>
 <CallbackParentComp/>
 <MemoCounters/>
-*/}
 <UseRefComponet/>
+*/}
+<CustomHookCounter/>
 </div>
 
   );
